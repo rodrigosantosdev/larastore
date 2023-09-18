@@ -1,0 +1,3 @@
+<footer>
+    Component Footer
+</footer>
