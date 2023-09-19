@@ -27,6 +27,20 @@ class FilteredAdvertises extends Component
                 'price' => 'R$ 120,00',
                 'href' => '#',
             ],
+            [
+                'image' => 'https://picsum.photos/200/300',
+                'title' => 'Product name',
+                'description' => 'lorem ipsum dolor sit amet',
+                'price' => 'R$ 120,00',
+                'href' => '#',
+            ],
+            [
+                'image' => 'https://picsum.photos/200/300',
+                'title' => 'Product name',
+                'description' => 'lorem ipsum dolor sit amet',
+                'price' => 'R$ 120,00',
+                'href' => '#',
+            ],
 
         ];
     }
