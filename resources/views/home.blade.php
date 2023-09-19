@@ -16,17 +16,8 @@
     <main class="container mx-auto">
         <x-hero />
         <x-filtered-advertises />
-
-        <section class="grid grid-cols-4 gap-8">
-            <x-simple-advertise />
-            <x-simple-advertise />
-            <x-simple-advertise />
-            <x-simple-advertise />
-            <x-simple-advertise />
-        </section>
+        <x-footer />
     </main>
-
-    <x-footer />
 
 </body>
 
