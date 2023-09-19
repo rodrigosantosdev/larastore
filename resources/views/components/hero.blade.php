@@ -1,8 +1,8 @@
-<section>
-    <span>Aqui você encontra o que tanto procura!</span>
-    <h2>O que você está procurando ?</h2>
+<section class="my-10">
+    <h1 class="text-5xl text-center">Aqui você encontra o que tanto procura!</h1>
+    <h2 class="text-2xl text-center my-4">O que você está procurando ?</h2>
 
-    <form>
+    <form class="flex justify-center gap-10 my-8 w-full">
         <label for="search"></label>
         <input type="text" name="search" placeholder="Estou procurando por..">
 
@@ -19,6 +19,6 @@
             @endforeach
         </select>
 
-        <button>Procurar</button>
+        <button class="bg-purple-500 text-white py-2 px-8">Procurar</button>
     </form>
 </section>
