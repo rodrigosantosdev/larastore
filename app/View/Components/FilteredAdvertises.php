@@ -8,7 +8,8 @@ use Illuminate\View\Component;
 
 class FilteredAdvertises extends Component
 {
-    public $advertisesList;
+    private $advertisesList;
+
     public function __construct()
     {
         $this->advertisesList = [
@@ -33,7 +34,7 @@ class FilteredAdvertises extends Component
 
     public function render(): View|Closure|string
     {
-        $data['advertisesList '] = $this->advertisesList;
+        $data['advertisesList'] = $this->advertisesList;
         return view('components.filtered-advertises', $data);
     }
 }

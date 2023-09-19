@@ -20,11 +20,14 @@
             Sapatos
         </button>
     </div>
-    oi
-    <section class="grid grid-cols-4 gap-8">
-        @foreach ($advertisesList as $item)
-            <x-simple-advertise href={{ $item['href'] }} bgImage={{ $item['image'] }} nameProduct={{ $item['title'] }}
-                description={{ $item['description'] }} price={{ $item['price'] }} />
+    <section class="grid">
+        @foreach($advertisesList as $ad)
+            <x-simple-advertise
+                    bgImage="{{ $ad['image'] }}"
+                    title="{{ $ad['title'] }}"
+                    price="{{ $ad['price'] }}"
+                    href="{{ $ad['href'] }}"
+            />
         @endforeach
     </section>
 </div>
