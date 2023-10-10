@@ -1,25 +1,25 @@
-<x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-    </div>
+@extends('layouts.app')
 
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
-
-    <form method="POST" action="{{ route('password.email') }}">
+@section('content')
+    <form method="POST" action=""
+        class="flex flex-col items-center justify-center border w-2/4 md:w-2/6 p-8 mt-40 mx-auto">
         @csrf
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        <h2 class="text-zinc-800 mb-10 text-xl">LaraStore</h2>
+
+        <div class="flex flex-col gap-4 w-full">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="email" class="w-full">
+
+
+
+            <button class="bg-sky-500 text-white py-2 px-4">Recuperar Senha</button>
+
+            <span>
+                Ainda não tem conta?
+                <a href="/register" class="text-center text-sky-500 font-medium">Fazer Cadastro</a>
+            </span>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
-            </x-primary-button>
-        </div>
     </form>
-</x-guest-layout>
+@endsection
